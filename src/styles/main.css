@@ -9,7 +9,17 @@ Tipical Device Breakpoints
     Tablet: 768px até 992px
     Desktop: 992px até 1200px
     Larges Screen: acima d/e 1200px
+
+    Cor 1: #ff6700
 */
+
+:root {
+    --cor0: #FF6700;
+    --cor1: #000000;
+    --cor2: #808080;
+    --cor3: #ffffff;
+}
+
 
 * {
     border: none;
@@ -20,9 +30,55 @@ Tipical Device Breakpoints
 
 header {
     position: fixed;
-    background-color: white;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 130px;
+    background-color: var(--cor0);
+    color: white;
+    
+    z-index: 1000;
+}
+
+img {
+    position: relative;
+    width: 250px;
+    margin-left:  10px;
+    
 }
 
 nav {
-    border: 1px solid red;
+    display: flex;
+    background-color: var(--cor1);
 }
+
+main {
+    padding-top: 130px;
+}
+
+
+
+header > nav > div {
+    padding: 2px 50px;
+    /* border-radius: 10px; */
+}
+
+a {
+    text-decoration: none;
+}
+
+header > nav > div:hover {
+    /* background-image: linear-gradient(to top,  #ff6700, black, black); */
+    border-bottom: 5px solid black ;
+}
+
+
+
+a {
+    color: white;
+}
+
+/* a:hover {
+    cursor: pointer;
+    color: #FF6700;
+} */
